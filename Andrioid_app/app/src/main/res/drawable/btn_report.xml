@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/stroke_blue" android:state_selected="true" />
+    <item android:state_pressed="true"
+        android:drawable="@drawable/stroke_blue" /> <!-- pressed -->
+    <item android:state_focused="true"
+        android:drawable="@drawable/stroke_blue" />
+    <item android:drawable="@drawable/rect_black" />
+</selector>

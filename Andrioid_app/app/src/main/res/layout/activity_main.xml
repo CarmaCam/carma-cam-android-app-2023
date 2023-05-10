@@ -1,0 +1,75 @@
+<android.support.percent.PercentFrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/mainFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <com.carma_cam.carmacam.ClickableFrameLayout
+        android:id="@+id/bottomFrameLayout"
+        android:background="@drawable/round_corner"
+        android:layout_gravity="bottom"
+        app:layout_widthPercent="60%"
+        app:layout_heightPercent="30%"
+        android:padding="7dp"
+        >
+        <FrameLayout
+            android:layout_gravity="center"
+            android:id="@+id/hold_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </com.carma_cam.carmacam.ClickableFrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_theme_mode_activity_main"
+        android:layout_margin="20px"
+        android:src="@drawable/nightmode"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="2%"
+        app:layout_marginTopPercent="2%"
+        app:layout_widthPercent="10%" />
+
+    <android.support.percent.PercentFrameLayout
+        android:id="@+id/speedLayout"
+        android:layout_gravity="top|center"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="30%">
+
+        <TextView
+            android:id="@+id/speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0 mph"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </android.support.percent.PercentFrameLayout>
+
+    <android.support.percent.PercentFrameLayout
+        android:layout_gravity="bottom|right"
+        app:layout_widthPercent="39%"
+        app:layout_heightPercent="30%"
+        android:id="@+id/ll_report">
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn_upload"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:text="@string/report"
+            android:visibility="gone"
+            android:background="@drawable/btn_report"/>
+
+    </android.support.percent.PercentFrameLayout>
+
+</android.support.percent.PercentFrameLayout>

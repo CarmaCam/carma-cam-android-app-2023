@@ -1,0 +1,48 @@
+<android.support.percent.PercentFrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/mainFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+
+    <com.carma_cam.carmacam.ClickableFrameLayout
+        android:id="@+id/bottomFrameLayout"
+        android:background="@drawable/round_corner"
+        android:layout_gravity="bottom|right"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="60%"
+        android:padding="5dp"
+        >
+        <FrameLayout
+            android:clickable="false"
+            android:id="@+id/hold_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </com.carma_cam.carmacam.ClickableFrameLayout>
+
+    <android.support.percent.PercentFrameLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="top|right"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="32%"
+        android:id="@+id/ll_report">
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn_upload"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:text="@string/report"
+            android:visibility="gone"
+            android:background="@drawable/btn_report"/>
+    </android.support.percent.PercentFrameLayout>
+
+</android.support.percent.PercentFrameLayout>

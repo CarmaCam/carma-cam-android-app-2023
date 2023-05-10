@@ -1,0 +1,11 @@
+<eps> 0
+!SIL 1
+<NOISE> 2
+<SPOKEN_NOISE> 3
+<UNK> 4
+Emergency-Alert 5
+Report-Bad-Driver 6
+sil_word 7
+#0 8
+<s> 9
+</s> 10

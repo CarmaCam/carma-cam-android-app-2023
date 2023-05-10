@@ -1,0 +1,56 @@
+<android.support.percent.PercentFrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <android.support.percent.PercentFrameLayout
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="70%"
+        android:id="@+id/map_frame"
+        android:background="@android:color/transparent">
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/btn_zoom_in"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/btn_zoom_in" />
+
+            <ImageButton
+                android:id="@+id/btn_zoom_out"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/btn_zoom_out" />
+
+        </LinearLayout>
+    </android.support.percent.PercentFrameLayout>
+
+
+    <android.support.percent.PercentFrameLayout
+        android:id="@+id/bottom_frame"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="30%"
+        android:background="#ffffff"
+        >
+    </android.support.percent.PercentFrameLayout>
+
+
+
+</android.support.percent.PercentFrameLayout>

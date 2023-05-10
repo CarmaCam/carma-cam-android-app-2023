@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.percent.PercentFrameLayout
+        android:id="@+id/video_frame"
+        app:layout_widthPercent="70%"
+        app:layout_heightPercent="100%"
+        app:layout_marginEndPercent="3%">
+        <com.carma_cam.carmacam.fragments.AutoFitTextureView
+            android:id="@+id/texture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+        <!--<ImageView
+            android:id="@+id/recordSign"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_margin="20px"
+            app:layout_marginTopPercent= "5%"
+
+            app:layout_marginLeftPercent= "47%"
+            android:src="@drawable/rec"
+            android:visibility="invisible" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="touch video to upload"/>
+    </android.support.percent.PercentFrameLayout>
+
+
+    <android.support.percent.PercentFrameLayout
+        android:id="@+id/cameraSideMenu"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="35%"
+        android:layout_gravity="right"
+        android:gravity="center">
+        <Button
+            android:layout_gravity="center"
+            android:background="@drawable/btn_circle"
+            android:id="@+id/video"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textColor="#ffffffff"
+            android:text="@string/record" />
+    </android.support.percent.PercentFrameLayout>
+
+</android.support.percent.PercentFrameLayout>

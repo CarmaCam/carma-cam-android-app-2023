@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.yandex.android:speechkit:2.5.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/speechkit-2.5.0.aar/c0c74670d2f971405bdf3eb34ff1eca1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/speechkit-2.5.0.aar/c0c74670d2f971405bdf3eb34ff1eca1/jars/libs/YandexSpeechKit.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/speechkit-2.5.0.aar/c0c74670d2f971405bdf3eb34ff1eca1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/speechkit-2.5.0.aar/c0c74670d2f971405bdf3eb34ff1eca1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
